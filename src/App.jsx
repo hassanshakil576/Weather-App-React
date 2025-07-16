@@ -13,7 +13,7 @@ function App() {
 
   function getWeather(e) {
     e.preventDefault();
-    fetch(`http://api.weatherapi.com/v1/current.json?key=29b71cb3a7064f5eb0b120607241811&q=${city}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=29b71cb3a7064f5eb0b120607241811&q=${city}&aqi=no`)
       .then((res) => res.json())
       .then((res) => {
         setWeather(res)
